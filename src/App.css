@@ -1,0 +1,33 @@
+.App {
+    margin: 1em 1.1em 6em;
+}
+
+.md {
+    margin-bottom: .5em !important;
+}
+
+.vam {
+    vertical-align: middle !important;
+}
+
+.load-more {
+    margin: 1em 0 !important;
+}
+
+.search-form {
+    margin: 0 0 1em !important;
+}
+
+@media only screen and (max-width: 767px) {
+    .App {
+        margin: 2em .6em 6em;
+    }
+
+    .load-more {
+        margin: 1em .5em !important;
+    }
+
+    .search-form {
+        margin: -1em .5em 2em !important;
+    }
+}
