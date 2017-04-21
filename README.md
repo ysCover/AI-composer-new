@@ -11,7 +11,7 @@
 * semantic-ui-react
 * ES6(JavaScript ES2015)
 
-其中所使用的相关电影数据来自**豆瓣电影API**。你可以到[这里](http://works.flyerq.com/portfolio/movie-favorites "电影收藏夹")去查看这个项目的线上示例。
+其中所使用的相关电影数据来自**豆瓣电影API**。你可以到[这里](http://movie-favorites.flyerq.com "电影收藏夹")去查看这个项目的线上示例。
 
 ## 项目构建工具说明
 

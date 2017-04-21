@@ -2,7 +2,7 @@
   "name": "movie-favorites",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://works.flyerq.com/portfolio/movie-favorites",
+  "homepage": "http://movie-favorites.flyerq.com",
   "dependencies": {
     "fetch-jsonp": "^1.0.6",
     "lodash": "^4.17.4",
