@@ -1,4 +1,4 @@
-# movie-favorites(电影收藏夹)
+# Movie Favorites(电影收藏夹)
 
 ![电影收藏夹手机屏幕截图](http://movie-favorites.flyerq.com/screenshot.jpg "电影收藏夹手机屏幕截图")
 
