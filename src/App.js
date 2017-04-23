@@ -11,7 +11,6 @@ import './App.css';
 
 class App extends Component {
     render() {
-        console.log(this.props.history.location.pathname);
         return (
             <ConnectedRouter history={this.props.history}>
                 <div className='App'>
