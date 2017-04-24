@@ -14,7 +14,7 @@ class App extends Component {
         return (
             <ConnectedRouter history={this.props.history}>
                 <div className='App'>
-                    <Switch key={location.pathname}>
+                    <Switch>
                         <Route exact path='/' component={TheatersContainer} />
                         <Route path='/top250' component={Top250Container} />
                         <Route path='/search/:keyword?' component={SearchContainer} />
