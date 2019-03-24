@@ -31,3 +31,75 @@
         margin: -1em .5em 2em !important;
     }
 }
+
+/*编曲模块样式*/
+.composer-div{
+    width: 75%;
+    height: 800px;
+    position: center;
+    margin:0 auto;
+    padding:0 auto;
+}
+
+.composer-div .logo-image-1{
+    width: 100%;
+    height: 200px;
+    background-color:#87B071;
+    position: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.composer-div .logo-image-1 .logo-image-2{
+    width: 90%;
+    background-color: #EC4C4D;
+    position: center;
+    margin: 0 auto;
+}
+
+.composer-div .logo-image-1 .logo-image-2 .logo-image-3{
+    width: 90%;
+    background-color:black;
+    position: center;
+    margin: 0 auto;
+}
+
+.composer-div .logo-image-1 .logo-image-2 .logo-image-3 .logo-image{
+    width: 90%;
+    height: 180px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 42px;
+}
+
+.composer-div .composer-music-select{
+    float:left;
+    /*background-color:Blue;*/
+    width:32%;
+}
+
+.composer-div .composer-music-player{
+    vertical-align:middle;
+    float:right;
+    /*background-color: Green;*/
+    width:68%;
+    height:350px;
+}
+
+.composer-music-player .composer-root{
+    margin-top:20px;
+    vertical-align:middle;
+    /*background-color: Red;*/
+}
+
+.composer-button1{
+    margin: 1em 0 !important;
+}
+
+.composer-button2{
+    /*margin: 1em 0 !important;*/
+    padding-right: 100px;
+    margin-top: 20px;
+}
+
+

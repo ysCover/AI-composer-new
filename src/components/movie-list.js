@@ -37,7 +37,8 @@ export default class MovieList extends Component {
         }
 
         return movies.length > 0 ? (
-            <div>
+            <div className='composer-div' >
+            {/*<div>*/}
                 <Card.Group stackable>
                     {cards}
                 </Card.Group>
@@ -58,8 +59,8 @@ export default class MovieList extends Component {
                 <Message
                     icon={isFavoritesList ? 'smile' : 'frown'}
                     color='teal'
-                    header={isFavoritesList ? '你还没收藏任何电影哦' : '抱歉，没有相关电影条目'}
-                    content={isFavoritesList ? '快去其它栏目收藏些你喜欢的电影吧！' : '可能服务器出现了异常，请稍后再试吧！'}
+                    header={isFavoritesList ? '你还没收藏任何编曲哦' : '抱歉，没有相关音乐内容'}
+                    content={isFavoritesList ? '快去试试AI作曲家吧！' : '可能服务器出现了异常，请稍后再试吧！'}
                 />
             </div>
         );

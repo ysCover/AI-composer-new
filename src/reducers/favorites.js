@@ -8,7 +8,6 @@ const favorites = (state = [], action) => {
             let newState = [...state];
             index !== -1 ? newState.splice(index, 1) : newState.push(action.movie);
             return newState;
-
         default:
             return state;
     }
