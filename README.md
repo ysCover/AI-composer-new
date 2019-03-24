@@ -1,7 +1,5 @@
 # Movie Favorites(电影收藏夹)
 
-![Movie Favorites](./movie-favorites.jpg "电影收藏夹")
-
 这是一个我针对React相关技术的实践项目，仅用于个人学习与实践。下面是这个项目中所涉及到的相关技术的清单：
 
 * React
