@@ -40,6 +40,23 @@ class SearchMovieList extends Component {
         }
     }
 
+    // 前后端交互接口(编曲)
+    composing= (request) => {
+        request = new XMLHttpRequest();
+        request.open("GET", 'http://127.0.0.1:5000/test', true)
+        request.setRequestHeader('content-type', 'application/json')
+        request.onreadystatechange = function () {
+            if (request.readyState === 4) {
+                // alert(request.responseText)
+                // let register  = '请选择业务模式为'+'<span xss=removed>+name+</span>'+'的记录!';
+                // alert(register);
+                alert("已生成新的编曲!")
+            }
+        };
+        request.send()
+    }
+
+
     render () {
         const { keyword } = this.props;
         const NewRoot = require('./AI-Composer/root').default;
@@ -72,7 +89,9 @@ class SearchMovieList extends Component {
                     <div className="ui vertical header"> 选择编曲乐器</div>
                     <Select placeholder='Select your country' options={InstrumentOptions} defaultValue="Piano" style={{ width: 250 }} onChange={handleChange}/>
                     <div className="ui vertical header"> </div>
-                    <Button id='arranging-start' className='composer-button1'>开始编曲</Button>
+                    <Button id='arranging-start' className='composer-button1'
+                            onClick={this.composing}
+                    >开始编曲</Button>
                 </div>
 
                 <div className='composer-music-player'>

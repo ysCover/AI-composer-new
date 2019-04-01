@@ -8,7 +8,7 @@ class Navbar extends Component {
             <Menu fixed="bottom" icon='labeled' inverted widths={3}>
                 <Menu.Item exact as={NavLink} to='/' name='theaters' color='blue' link>
                     <Icon name='history' />
-                    历史编曲
+                    编曲歌单推荐
                 </Menu.Item>
 
                 {/*<Menu.Item as={NavLink} to='/top250' name='top250' color='blue' link>*/}

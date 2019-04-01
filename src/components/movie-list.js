@@ -28,7 +28,18 @@ export default class MovieList extends Component {
             // 检测该电影是否已被收藏
             let favorite = isFavoritesList ? true : favorites.some( f => f.id === movie.id);
             return <MovieListItem key={movie.id} movie={movie} favorite={favorite} onFavoriteClick={onFavoriteClick} />
-        });
+       });
+
+        // const isFavoritesList = songs === null;
+        // isFavoritesList && (songs = favorites);
+        // const isShowLoadMore = total > start + count;
+        // const nextStart = start + count;
+        // const cards = songs.map(song => {
+        //     // 检测该电影是否已被收藏
+        //     let favorite = isFavoritesList ? true : favorites.some( f => f.id === song.id);
+        //     // return <MovieListItem key={movie.id} movie={movie} favorite={favorite} onFavoriteClick={onFavoriteClick} />
+        //     return <MovieListItem key={song.id} songs={song} favorite={favorite} onFavoriteClick={onFavoriteClick} />
+        // });
 
         if (isFetching && !movies.length > 0) {
             return (
