@@ -26,7 +26,7 @@ class SignupForm extends Component {
     render() {
         return (
             <form onSubmit={ this.onSubmit } autocomplete="off">
-                <h3>AI composer 注册</h3>
+                <h3>用户注册</h3>
 
                 <div className="form-group">
                     <label className="control-label">用户名</label>

@@ -1,7 +1,7 @@
+/* eslint-disable */
 import React from 'react';
-/* eslint-disable */
-import { Card, Rating, Icon, Image, Label } from 'semantic-ui-react';
-/* eslint-disable */
+import { Link } from 'react-router-dom';
+import {Card, Rating, Icon, Image, Label, Button} from 'semantic-ui-react';
 // import imgSongsheet from '../static_files/images/SongSheet/p1.jpeg'
 import { Song_Sheet_List } from '../static_files/song-sheet';
 
@@ -20,14 +20,18 @@ const MovieListItem = ({ movie, favorite, onFavoriteClick }) => {
         }
     }
 
+    // 歌单对应的编曲列表
+    // const song_sheet_id = 2730333449;
+
     return (
         <Card style={{ width: 220, margin: 10}}>
-            {/*<Image fluid centered src={movie.images.large} label={favorite ? {color: 'blue', icon: 'star', content: '已收藏', ribbon: true} : false} />*/}
             <Image label={favorite ? {color: 'blue', icon: 'star', content: '已收藏', ribbon: true} : false} />
-            <img className='logo-image' src={Song_Sheet_List[parseInt(index)].img_path} alt="ComposerLogo" style={{ width:  210, height: 100, margin: 5}}/>
+            <Link to="/playListInfo">
+                <img className='logo-image' src={Song_Sheet_List[parseInt(index)].img_path} alt="ComposerLogo" style={{ width:  210, height: 100, margin: 5}}/>
+            </Link>
             <Card.Content>
-                {/*<Card.Header as='a' className='mb' target='_blank' href={movie.alt}>{movie.title}</Card.Header>*/}
-                <Card.Header as='a' className='mb' target='_blank' href={movie.alt}>{ Song_Sheet_List[parseInt(index)].title }</Card.Header>
+                {/*<Card.Header as='a' className='mb' target='_blank' href={movie.alt}>{ Song_Sheet_List[parseInt(index)].title }</Card.Header>*/}
+                <Card.Header as={Link} to="/playListInfo" target='_blank'>{ Song_Sheet_List[parseInt(index)].title }</Card.Header>
                 {/*<Card.Meta>*/}
                     {/*<span>原名：{movie.original_title}（{movie.year}）</span>*/}
                     {/*<span>创建时间：2019/01/01 </span>*/}
@@ -37,8 +41,7 @@ const MovieListItem = ({ movie, favorite, onFavoriteClick }) => {
                         {/*<span className="vam">评分：</span><Rating className="vam" size='large' icon="star" defaultRating={Math.round(movie.rating.average/10*5)} maxRating={5} disabled />*/}
                         {/*<Label size='mini' color='green' pointing='left'>豆瓣评分 {movie.rating.average}</Label>*/}
                     </div>
-                    {/*<p>导演：{directors}</p>*/}
-                    {/*<p>主演：{casts}</p>*/}
+                    {/*<p>id: {movie.id} </p>*/}
                     <p>类型：{ Song_Sheet_List[parseInt(index)].type }</p>
                     <p>时长：{ Song_Sheet_List[parseInt(index)].length } </p>
                     <p>乐器：{ Song_Sheet_List[parseInt(index)].instruments } </p>

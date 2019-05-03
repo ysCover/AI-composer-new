@@ -8,7 +8,7 @@ class Navbar extends Component {
             <Menu fixed="bottom" icon='labeled' inverted widths={3}>
                 <Menu.Item exact as={NavLink} to='/' name='theaters' color='blue' link>
                     <Icon name='history' />
-                    编曲歌单推荐
+                    编曲素材库推荐
                 </Menu.Item>
 
                 {/*<Menu.Item as={NavLink} to='/top250' name='top250' color='blue' link>*/}
@@ -18,7 +18,7 @@ class Navbar extends Component {
 
                 <Menu.Item as={NavLink} to='/search' name='search' color='blue' link>
                     <Icon name='music' />
-                    AI作曲家
+                    智能编曲
                 </Menu.Item>
 
                 <Menu.Item as={NavLink} to='/favorites' name='favorites' color='blue' link>

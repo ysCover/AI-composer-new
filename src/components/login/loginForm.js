@@ -25,7 +25,7 @@ class LoginForm extends Component {
         return (
             // autocomplete="off"实现Chrome浏览器取消INPUT自动记忆下拉框
             <form onSubmit={ this.onSubmit } autocomplete="off">
-                <h3>AI composer 登陆</h3>
+                <h3>用户登陆</h3>
 
                 <div className="form-group">
                     <label className="control-label">用户名</label>

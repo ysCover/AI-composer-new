@@ -1,3 +1,4 @@
+ /* eslint-disable */
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { ConnectedRouter } from 'react-router-redux';
@@ -8,15 +9,14 @@ import TheatersContainer from './containers/theaters-container';
 import Top250Container from './containers/top250-container';
 import SearchContainer from './containers/search-container';
 import FavoritesContainer from './containers/favorites-container';
-import FooterPlayer from './components/Music_play/Footer'
 import './App.css';
 // import '../src/components/AI-Composer/player.scss'
-
-// import Footer from '@components/Footer'
 
 // 登陆注册组件
 import SignupPage from './components/signup/signupPage'
 import LoginPage from './components/login/loginPage'
+// 歌单对应编曲列表组件
+import SongSheetPlayList from './components/Music_list/List/index';
 
 class App extends Component {
     render() {
@@ -31,8 +31,8 @@ class App extends Component {
                         <Route path='/top250' component={Top250Container} />
                         <Route path='/search/:keyword?' component={SearchContainer} />
                         <Route path='/favorites' component={FavoritesContainer} />
+                        <Route path="/playListInfo" component={ SongSheetPlayList }/>
                         <Route component={NotFound} />
-                        <Route path='/playlistinfo' component={ FooterPlayer }/>
                     </Switch>
                     <Navbar />
                 </div>
