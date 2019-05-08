@@ -1,5 +1,6 @@
 .App {
-    margin: 1em 1.1em 6em;
+    /*这段代码会使导航条和浏览器间有距离*/
+    /*margin: 1em 1.1em 6em;*/
 }
 
 .mb {

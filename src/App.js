@@ -16,7 +16,7 @@ import './App.css';
 import SignupPage from './components/signup/signupPage'
 import LoginPage from './components/login/loginPage'
 // 歌单对应编曲列表组件
-import SongSheetPlayList from './components/Music_list/List/index';
+import SongSheetPlayList from './components/Music_list/List/MusicList';
 
 class App extends Component {
     render() {

@@ -68,7 +68,7 @@ let Player = React.createClass({
                             <div className="left-time -col-auto">{this.state.seconds}</div>
                             {/*音量控件*/}
                             <div className="volume-container">
-                                <i className="icon-volume rt"></i>
+                                <i className="AI-icon-volume rt"></i>
                                     <div className="volume-wrapper">
                                         <Progress progress={this.state.volume} onProgressChange={this.changeVolumeHandler}
                                             barColor="#aaa" />

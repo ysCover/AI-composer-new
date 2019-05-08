@@ -29,7 +29,7 @@ table {
 
 .mainLayout {
   position: fixed;
-  bottom: 140px;
+  bottom: 155px;
   /*top: 100px;*/
   left: 0;
   right: 0;
@@ -48,8 +48,8 @@ table {
   left: 0;
   margin: 0 auto;
   /*background-color: #333;*/
-  /*background-color: #da9796;*/
-  background-color: #87B071;
+  background-color: #F08080;
+  /*background-color: #87B071;*/
 }
 
 /* 播放主内容布局*/
@@ -126,7 +126,8 @@ table {
 }
 
 .title-info {
-  color: #e8e8e8;
+  /*color: #e8e8e8;*/
+  color: #fff;
 }
 
 .music-info {
@@ -135,13 +136,14 @@ table {
 
 .author-info {
   margin-left: 15px;
-  color: #9b9b9b;
+  /*color: #9b9b9b;*/
+  color: #000;
 }
 
 .process {
   width: 100%;
   /* background: #eaeaea; */
-  box-shadow: 1px 1px 1px #000;
+  /*box-shadow: 1px 1px 1px #000;*/
   background: #000;
   height: 8px;
   border-radius: 5px;
@@ -164,7 +166,8 @@ table {
   left: 0;
   top: 0;
   height: 8px;
-  background: #e11b22;
+  /*background: #e11b22;*/
+  background: #EC4C4D;
   z-index: 2;
   border-radius: 5px;
 }
@@ -182,7 +185,8 @@ table {
 
 .process-item-inside {
   position: relative;
-  background: #e11b22;
+  /*background: #e11b22;*/
+  background: #EC4C4D;
   top: 4px;
   left: 4px;
   height: 8px;
@@ -267,7 +271,7 @@ table {
   width: 2px;
   height: 24px;
   background: #000;
-  box-shadow: 1px 1px 1px #000;
+  /*box-shadow: 1px 1px 1px #000;*/
   border-radius: 5px;
   display: inline-block;
   content: "";
@@ -285,7 +289,7 @@ table {
 
 .volume-controler {
   position: absolute;
-  top: -139px;
+  top: -148px;
   left: 9px;
   width: 32px;
   height: 128px;
@@ -309,7 +313,8 @@ table {
   position: absolute;
   width: 4px;
   bottom: 0;
-  background: #e11b22;
+  /*background: #e11b22;*/
+  background: #EC4C4D;
   border-radius: 5px;
 }
 
@@ -326,7 +331,8 @@ table {
 
 .volume-item-inside {
   position: relative;
-  background: #e11b22;
+  /*background: #e11b22;*/
+  background: #EC4C4D;
   top: 4px;
   left: 4px;
   height: 4px;
@@ -359,10 +365,10 @@ table {
   position: absolute;
   width: 985px;
   left: 50%;
-  height: 300px;
+  height: 450px;
   margin-left: -500px;
   background: #333;
-  bottom: 52px;
+  bottom: 60px;
 }
 
 .music-list-head {
@@ -476,7 +482,7 @@ table {
   left: 0;
   top: 41px;
   width: 976px;
-  height: 260px;
+  height: 410px;
   overflow: hidden;
   background: #262626;
 }
@@ -486,7 +492,7 @@ table {
   left: 2px;
   top: 0;
   width: 540px;
-  height: 260px;
+  height: 410px;
   overflow: auto;
 }
 
@@ -573,8 +579,10 @@ table {
   position: absolute;
   left: 542px;
   width: 435px;
-  height: 260px;
+  /*height: 310px;*/
+  height: 410px;
   overflow: hidden;
-  background: gray;
+  /*background: gray;*/
+  background: #262626;
   /* opacity: 0.01; */
 }

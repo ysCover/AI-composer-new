@@ -6,7 +6,7 @@ class NavigationBar extends Component {
     render() {
         return (
             // mb-3 设置与下面模块的距离
-            <nav className="navbar navbar-expand-sm navbar-light bg-light mb-4">
+            <nav className="navbar navbar-expand-sm navbar-light  mb-4" style={{ height: 55, background: '#E6E6E6'}}>
                 <div className="container">
                     <Link className="navbar-brand" to="/">Home</Link>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03"

@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import _ from "lodash";
 import "./AudioPlay.css";
 import "./Static.css";
+import imgPlayer from "../../../static_files/images/SongSheet/p3.jpeg";
 
 /**
  * 前端音乐播放器
@@ -32,8 +33,8 @@ class Audio_Play extends Component {
       volumeControl: false,
       // 当前的播放模式 1列表循环 2随机 3单曲
       playMode: 1,
-      // 歌单显示控制
-      isMusicListShow: false
+      // 歌单显示控制, 初始化是显示的
+      isMusicListShow: true
     };
   }
 
@@ -612,10 +613,12 @@ class Audio_Play extends Component {
                 className="icon-volume volume"
                 onClick={this.onVolumeControl}
               />
+              {/*更新播放模式*/}
               <span
                 className={`${playModeIcon} circulation`}
                 onClick={this.onPlayModeChange}
               />
+              {/*显示音乐列表*/}
               <span className="icon-list list" onClick={this.onMusicList} />
             </div>
             {/* 歌单组件 */}
@@ -712,13 +715,30 @@ class Audio_Play extends Component {
                     </ul>
                   </div>
                   <div className="music-list-body-lyric">
-                    这里是歌词区域，后期完善
+                    {/*这里是歌词区域，后期完善*/}
+                      <h3 style={{color: "#c7c7c7"}}>音乐素材基本信息</h3>
+                      <p><h4 style={{color: "#c7c7c7"}}>曲风：爵士（Jazz）;    时长：60s ;       乐器： 钢琴</h4></p>
+                    <div className="-col-auto cover">
+                        <img src={imgPlayer} alt="PlayerLogo"  className={`${this.state.isPlay ? 'rotation' : ''}`}/>
+                    </div>
                   </div>
                 </div>
               </div>
             )}
-            {/* 播放器基础组件 */}
+             {/*播放器  基础组件*/}
             <audio src={resource} ref={ref => (this.audio = ref)} />
+            {/*<embed src="../../../resource/midi_test.mid"  autostart="true" />*/}
+            {/*<embed src="../../../resource/midi_test.mid"  autostart="true" />*/}
+              {/*<object classID="clsid:22D6F312-B0F6-11D0-94AB-0080C74C7E95" id="MediaPlayer1">*/}
+                  {/*<param name="Filename" value="1.mid">*/}
+                      {/*<param name="PlayCount" value="0">*/}
+                          {/*<param name="AutoStart" value="1">*/}
+              {/*</object>*/}
+              {/*<object*/}
+                  {/*classID="clsid:22D6F312-B0F6-11D0-94AB-0080C74C7E95">*/}
+                  {/*<param name="FileName" value="../../../resource/midi_test.mid"/>*/}
+              {/*</object>*/}
+
           </div>
         </div>
       </div>

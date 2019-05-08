@@ -97,6 +97,105 @@ class SongSheetPlayList extends Component {
           time: "04:50",
           img:
             "http://singerimg.kugou.com/uploadpic/softhead/400/20160913/20160913140233132.jpg"
+        },
+        //   {
+        //   id: "4",
+        //   title: "test",
+        //   info: "me",
+        //   resource: require("../../../resource/midi_test.mid"),
+        //   time: "04:50",
+        //   img:
+        //     "http://singerimg.kugou.com/uploadpic/softhead/400/20160913/20160913140233132.jpg"
+        //  }
+          {
+          id: "4",
+          title: "jazz_demo_04",
+          info: "jazz, 60s,  piano",
+          resource: require("../../../resource/midi_to_mp3-2019-04-16-21-03-31.mp3"),
+          time: "01:00",
+          img:
+            "https://www.ranchosf.com/uploads/allimg/170908/176-1FZQKQCa.png"
+        },
+          {
+          id: "5",
+          title: "jazz_demo_05",
+          info: "jazz, 60s,  piano",
+          resource: require("../../../resource/midi_to_mp3-2019-04-16-20-21-41.mp3"),
+          time: "01:00",
+          img:
+            "https://www.ranchosf.com/uploads/allimg/170908/176-1FZQKQCa.png"
+        },
+          {
+          id: "6",
+          title: "jazz_demo_06",
+          info: "jazz, 60s,  piano",
+          resource: require("../../../resource/midi_to_mp3-2019-04-16-21-17-48.mp3"),
+          time: "01:00",
+          img:
+            "https://www.ranchosf.com/uploads/allimg/170908/176-1FZQKQCa.png"
+        },
+          {
+          id: "7",
+          title: "jazz_demo_07",
+          info: "jazz, 60s,  piano",
+          resource: require("../../../resource/midi_to_mp3-2019-04-16-21-15-55.mp3"),
+          time: "01:00",
+          img:
+            "https://www.ranchosf.com/uploads/allimg/170908/176-1FZQKQCa.png"
+        },
+          {
+          id: "8",
+          title: "jazz_demo_08",
+          info: "jazz, 60s,  piano",
+          resource: require("../../../resource/midi_to_mp3-2019-04-16-21-12-23.mp3"),
+          time: "01:00",
+          img:
+            "https://www.ranchosf.com/uploads/allimg/170908/176-1FZQKQCa.png"
+        },
+          {
+          id: "9",
+          title: "jazz_demo_09",
+          info: "jazz, 60s,  piano",
+          resource: require("../../../resource/midi_to_mp3-2019-04-16-21-10-46.mp3"),
+          time: "01:00",
+          img:
+            "https://www.ranchosf.com/uploads/allimg/170908/176-1FZQKQCa.png"
+        },
+          {
+          id: "10",
+          title: "jazz_demo_10",
+          info: "jazz, 60s,  piano",
+          resource: require("../../../resource/midi_to_mp3-2019-04-16-21-14-21.mp3"),
+          time: "01:00",
+          img:
+            "https://www.ranchosf.com/uploads/allimg/170908/176-1FZQKQCa.png"
+        },
+          {
+          id: "11",
+          title: "jazz_demo_11",
+          info: "jazz, 60s,  piano",
+          resource: require("../../../resource/midi_to_mp3-2019-04-16-21-05-11.mp3"),
+          time: "01:00",
+          img:
+            "https://www.ranchosf.com/uploads/allimg/170908/176-1FZQKQCa.png"
+        },
+          {
+          id: "12",
+          title: "jazz_demo_12",
+          info: "jazz, 60s,  piano",
+          resource: require("../../../resource/midi_to_mp3-2019-04-16-20-59-45.mp3"),
+          time: "01:00",
+          img:
+            "https://www.ranchosf.com/uploads/allimg/170908/176-1FZQKQCa.png"
+        },
+          {
+          id: "13",
+          title: "jazz_demo_13",
+          info: "jazz, 60s,  piano",
+          resource: require("../../../resource/midi_to_mp3-2019-04-16-20-57-58.mp3"),
+          time: "01:00",
+          img:
+            "https://www.ranchosf.com/uploads/allimg/170908/176-1FZQKQCa.png"
         }
       ]
     };
@@ -122,7 +221,6 @@ class SongSheetPlayList extends Component {
     return (
       <div>
         <div className="App-Content">
-          <div>this is play</div>
           <AudioPlay
             musicList={musicList}
             onDeleteMusic={this.onDeleteMusic}
