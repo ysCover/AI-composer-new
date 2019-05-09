@@ -3,6 +3,32 @@
 	to {-webkit-transform: rotate(360deg);}
 }
 
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?k56501');
+  src:  url('fonts/icomoon.eot?k56501#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?k56501') format('truetype'),
+    url('fonts/icomoon.woff?k56501') format('woff'),
+    url('fonts/icomoon.svg?k56501#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .container-player {
     background-color: #dddddd;
 	width: 100%;
@@ -13,9 +39,13 @@
     border-radius: 10px;
     //border-color: black;
     //border-width: 5px;
+
+    .control-wrapper {
+      margin-left: 15px;
+    }
     .mt20 {
         width: auto;
-        margin: 20px;
+        margin: 15px;
     }
 
 	.caption {
@@ -29,7 +59,9 @@
 	.cover {
 		width: 180px;
 		height: 180px;
-		margin-left: 20px;
+		margin-left: 10px;
+        margin-right: 25px;
+        margin-bottom: 25px;
 
 		img {
 			width: 180px;
@@ -43,8 +75,9 @@
 	}
 	.volume-container {
 		position: relative;
-		left: 20px;
-		//top: -1px;
+		left: 28px;
+		top: -12px;
+        width: 150px;
 	}
 	.volume-container .volume-wrapper {
 		//opacity: 0;
@@ -307,4 +340,31 @@
     background: url(../../static_files/images/icons.png) no-repeat;
     background-size: 16px auto;
     background-position: 0 -112px;
+}
+
+.AI-controler {
+  font-size: 20px;
+  position: relative;
+
+  .icon-volume:before {
+    content: "\e90f";
+    color: #000;
+  }
+}
+
+.AI-controler-Mode {
+  font-size: 32px;
+
+  .icon-circulation-list:before {
+    content: "\e905";
+    color: #000;
+  }
+  .icon-circulation-random:before {
+    content: "\e906";
+    color: #000;
+  }
+  .icon-circulation-single:before {
+    content: "\e907";
+    color: #000;
+  }
 }

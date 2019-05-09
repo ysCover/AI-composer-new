@@ -7,63 +7,8 @@ import { Icon } from 'antd'
 // import { specIndex, formatDuration } from '../utils'
 import './style.styl'
 import { SheetSongList } from '../../../static_files/sheet-song-list'
- // 插入音乐播放组件
- import AudioPlay from "../Audio_play/AudioPlay";
-// import {Icon, Menu} from "semantic-ui-react";
-
-// import {NavLink} from "react-router-dom";
-
-// const renderArtist = (song) => {
-//   const artists = song.artists || song.ar
-//   return (
-//     <div className="artist">
-//       {artists.map(artist => (
-//         <Link key={artist.name} to={{ pathname: `/artistinfo/${artist.id}` }}>
-//           {' '}
-//           {artist.name}
-//         </Link>
-//       ))}
-//     </div>
-//   )
-// };
-// class SongSheetPlayList extends Component{
-// // function SongList(props) {
-//   // const { tracks, isShowAr = true } = props;
-//   render (){
-//       // 怎样把素材库ID传进来
-//     // const { playlist } = this.props;
-//     // const {
-//     //   coverImgUrl, name, description, tags,
-//     // } = playlist;
-//     // const { id } = playlist;
-//       return (
-//           <div className="songList">
-//               <p className="play-all-btn">素材库</p>
-//               <div className="cover-img">
-//                 {/*<img src={coverImgUrl} alt="cover-img" />*/}
-//               </div>
-//               <p className="play-all-btn">播放全部({SheetSongList.length})</p>
-//               <ul className="container">
-//                 {SheetSongList.map((song, index) => (
-//                   <li className="item" key={song.id}>
-//                     <div className="section-one">
-//                       <span className="index">index: {index}        </span>
-//                       <span className="name">song name: {song.name}</span>
-//                     </div>
-//                   </li>
-//                 ))}
-//               </ul>
-//               <AudioPlay
-//                 musicList={musicList}
-//                 onDeleteMusic={this.onDeleteMusic}
-//                 onDeleteAllMusic={this.onDeleteAllMusic}
-//               />
-//           </div>
-//       );
-//   };
-//
-// }
-// export default SongSheetPlayList;
+// 插入音乐播放组件
+import AudioPlay from "../Audio_play/AudioPlay";
 
 
 class SongSheetPlayList extends Component {
@@ -193,6 +138,24 @@ class SongSheetPlayList extends Component {
           title: "jazz_demo_13",
           info: "jazz, 60s,  piano",
           resource: require("../../../resource/midi_to_mp3-2019-04-16-20-57-58.mp3"),
+          time: "01:00",
+          img:
+            "https://www.ranchosf.com/uploads/allimg/170908/176-1FZQKQCa.png"
+        },
+          {
+          id: "14",
+          title: "jazz_demo_14",
+          info: "jazz, 60s,  piano",
+          resource: require("../../../resource/midi_to_mp3-2019-04-16-20-54-35.mp3"),
+          time: "01:00",
+          img:
+            "https://www.ranchosf.com/uploads/allimg/170908/176-1FZQKQCa.png"
+        },
+          {
+          id: "13",
+          title: "jazz_demo_13",
+          info: "jazz, 60s,  piano",
+          resource: require("../../../resource/midi_to_mp3-2019-04-16-20-56-24.mp3"),
           time: "01:00",
           img:
             "https://www.ranchosf.com/uploads/allimg/170908/176-1FZQKQCa.png"

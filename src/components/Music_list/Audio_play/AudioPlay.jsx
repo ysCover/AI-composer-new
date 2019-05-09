@@ -517,6 +517,8 @@ class Audio_Play extends Component {
           onMouseMove={this.onProcessItemMouseMove}
           onMouseUp={this.onProcessItemMouseUp}
         >
+
+          {/*播放器（底部红色部分）*/}
           <div className="playContent">
             {/* 左侧控制器，播放，上一首，下一首 */}
             <div className="left-controler">
@@ -534,6 +536,7 @@ class Audio_Play extends Component {
                 onClick={this.nextMusic}
               />
             </div>
+
             {/* 主播放界面，缩略图，作者信息，进度条等 */}
             <div className="main-controler">
               <img src={img} alt="" className="thumbnail" />
@@ -557,6 +560,7 @@ class Audio_Play extends Component {
                         className="progress-played"
                         ref={ref => (this.processPlayed = ref)}
                       >
+                        {/*进度条上的小按钮*/}
                         <div
                           className="process-item"
                           ref={ref => (this.processItem = ref)}
@@ -568,6 +572,7 @@ class Audio_Play extends Component {
                       </div>
                     </div>
                   </div>
+                  {/*播放时间*/}
                   <div className="time">
                     <span className="current-time">{currentTime}</span>/
                     <span className="total-time">{totalTime}</span>
@@ -575,11 +580,14 @@ class Audio_Play extends Component {
                 </div>
               </div>
             </div>
+
+
             {/* 右侧加入歌单和分享 */}
             <div className="right-folder">
               <span className="icon-folder folder" onClick={this.onFolder} />
               <span className="icon-share share" onClick={this.onShare} />
             </div>
+
             {/* 右侧音量调节，循环调节，歌单查看 */}
             <div className="right-controler">
               {/* 音量控制条，这里采用的是style控制，因为需要获取到音量条的ref，如果不存在这个节点，就获取不到ref*/}
@@ -598,6 +606,7 @@ class Audio_Play extends Component {
                     className="volume-current"
                     ref={ref => (this.volumeProcessCurrent = ref)}
                   >
+                    {/*音量拖动小圆球*/}
                     <div
                       className="volume-item"
                       ref={ref => (this.volumeProcessItem = ref)}
@@ -609,6 +618,7 @@ class Audio_Play extends Component {
                   </div>
                 </div>
               </div>
+              {/*小喇叭图标*/}
               <span
                 className="icon-volume volume"
                 onClick={this.onVolumeControl}
@@ -621,6 +631,8 @@ class Audio_Play extends Component {
               {/*显示音乐列表*/}
               <span className="icon-list list" onClick={this.onMusicList} />
             </div>
+
+
             {/* 歌单组件 */}
             {isMusicListShow && (
               <div className="musicList">
@@ -656,6 +668,7 @@ class Audio_Play extends Component {
                   </span>
                 </div>
                 <div className="music-list-body">
+                  body
                   <div className="music-list-body-content">
                     <ul className="music-list-body-ul">
                       {musicList &&

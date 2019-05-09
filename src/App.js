@@ -10,7 +10,7 @@ import Top250Container from './containers/top250-container';
 import SearchContainer from './containers/search-container';
 import FavoritesContainer from './containers/favorites-container';
 import './App.css';
-// import '../src/components/AI-Composer/player.scss'
+// import '../src/components/AI-composer_items/player.scss'
 
 // 登陆注册组件
 import SignupPage from './components/signup/signupPage'

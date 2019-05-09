@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { toggleFavorite, fetchSearch, changeKeyword } from '../actions';
-import SearchMovieList from '../components/search-movie-list';
+import AI_composer_page from '../components/AI_composer_page';
 
 // 状态到组件属性的映射函数
 const mapStateToProps = (state, ownProps) => {
@@ -38,6 +38,6 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 const SearchContainer = connect(
     mapStateToProps,
     mapDispatchToProps
-)(SearchMovieList);
+)(AI_composer_page);
 
 export default SearchContainer;

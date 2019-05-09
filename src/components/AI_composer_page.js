@@ -2,8 +2,7 @@
 import React, { Component } from 'react';
 import { Form, Select, Button } from 'semantic-ui-react';
 import MovieList from './movie-list';
-import Player from './AI-Composer/player'
-import Root from './AI-Composer/root';
+import MusicPlayer from './AI-composer_items/ComposerPlayer';
 import imgLogo from '../static_files/images/ComposerLogo.JPG'
 
 const StyleOptions = [
@@ -29,7 +28,7 @@ function handleChange(value) {
 }
  /* eslint-disable */
 
-class SearchMovieList extends Component {
+class AI_composer_page extends Component {
     handleSubmit (e) {
         e.preventDefault();
         const keyword = e.target.keyword.value;
@@ -59,7 +58,7 @@ class SearchMovieList extends Component {
 
     render () {
         const { keyword } = this.props;
-        const NewRoot = require('./AI-Composer/root').default;
+        const NewRoot = require('./AI-composer_items/ComposerPlayer').default;
         return (
             <div className='composer-div' >
                  {/*<Form className='search-form' onSubmit={this.handleSubmit.bind(this)}>*/}
@@ -81,6 +80,8 @@ class SearchMovieList extends Component {
                         </div>
                     </div>
                 </div>
+
+                {/*编曲偏好选项*/}
                 <div className='composer-music-select' >
                     <div className="ui vertical header"> 选择编曲风格</div>
                     <Select placeholder='Select your style' options={StyleOptions} defaultValue="Jazz" style={{ width: 250 }} onChange={handleChange}/>
@@ -96,7 +97,7 @@ class SearchMovieList extends Component {
 
                 <div className='composer-music-player'>
                     <div className='composer-root'>
-                        <Root {...this.props}/>
+                        <MusicPlayer {...this.props}/>
                     </div>
                 </div>
                 {keyword && (<MovieList {...this.props} />)}
@@ -105,4 +106,4 @@ class SearchMovieList extends Component {
     };
 }
 
-export default SearchMovieList;
+export default AI_composer_page;
