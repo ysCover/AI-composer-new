@@ -374,7 +374,8 @@ table {
 .music-list-head {
   height: 40px;
   position: relative;
-  background: #000;
+  /*background: #000;*/
+  background: #D95C5C;
 }
 
 .music-list-head-title {
@@ -383,7 +384,8 @@ table {
   top: 0;
   height: 39px;
   font-size: 14px;
-  color: #e2e2e2;
+  /*color: #e2e2e2;*/
+  color: white;
   line-height: 39px;
 }
 
@@ -416,7 +418,8 @@ table {
   top: 10px;
   height: 15px;
   line-height: 15px;
-  color: #ccc;
+  /*color: #ccc;*/
+  color: white;
   cursor: pointer;
   font-size: 12px;
 }
@@ -440,7 +443,8 @@ table {
   height: 15px;
   line-height: 15px;
   font-size: 12px;
-  color: #ccc;
+  /*color: #ccc;*/
+  color: white;
   cursor: pointer;
 }
 
@@ -484,20 +488,22 @@ table {
   width: 976px;
   height: 410px;
   overflow: hidden;
-  background: #262626;
+  /*background: #262626;*/
+  background: #c7c7c7;
 }
 
 .music-list-body-content {
   position: absolute;
   left: 2px;
   top: 0;
-  width: 540px;
+  width: 640px;
   height: 410px;
   overflow: auto;
 }
 
 .music-list-body-ul {
-  color: #ccc;
+  /*color: #ccc;*/
+  color: black;
 }
 
 .music-list-li {
@@ -508,7 +514,8 @@ table {
 }
 
 .music-current {
-  background: #121212;
+  /*background: #121212;*/
+  background: white;
 }
 
 .music-list-li::after {
@@ -523,7 +530,8 @@ table {
 }
 
 .music-list-li:hover {
-  background: #000;
+  /*background: #000;*/
+  background: white;
   opacity: 1;
 }
 
@@ -554,31 +562,31 @@ table {
 }
 
 .music-list-li-col-2 {
-  width: 215px;
+  width: 190px;
 }
 
 .music-list-li-col-3 {
-  width: 115px;
+  width: 150px;
   visibility: hidden;
 }
 
 .music-list-li-col-4 {
-  width: 70px;
+  width: 140px;
 }
 
 .music-list-li-col-5 {
-  width: 38px;
+  width: 70px;
 }
 
 .music-list-li-col-6 {
-  width: 30px;
+  width: 50px;
   text-align: center;
 }
 
 .music-list-body-lyric {
   position: absolute;
-  left: 542px;
-  width: 435px;
+  left: 642px;
+  width: 335px;
   /*height: 310px;*/
   height: 410px;
   overflow: hidden;
@@ -586,3 +594,16 @@ table {
   background: #262626;
   /* opacity: 0.01; */
 }
+
+/*图片*/
+.-col-auto {
+  display: block!important;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  margin-left:45px;
+  margin-top: 20px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+

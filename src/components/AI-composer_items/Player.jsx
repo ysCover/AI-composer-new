@@ -2,10 +2,7 @@
 import React, {Component} from 'react';
 import './player.scss';
 import { Link } from 'react-router-dom';
-import Pubsub from 'pubsub-js';
 import imgPlayer from '../../static_files/images/CD.png'
-// import imgLogo from "../../static_files/images/ComposerLogo.JPG";
-import {Button} from "semantic-ui-react";
 
 class Player extends Component {
     constructor(props) {
@@ -263,7 +260,7 @@ class Player extends Component {
         }
       };
 
-      // 切歌后相关操作，如果正在播放中，则切歌后还是会直接播放，如果处于暂停，则切歌后不会直接播放
+       // 切歌后相关操作，如果正在播放中，则切歌后还是会直接播放，如果处于暂停，则切歌后不会直接播放
       onSwitchAction = () => {
         const { isPause } = this.state;
         // 处于暂停标志，则表示正在播放中，则重置进度条后，直接调用播放，否则就只重置进度条，不调用播放
@@ -396,8 +393,8 @@ class Player extends Component {
                         {/*<h2 className="music-title">{this.props.cuerrentMusicItem.title}</h2>*/}
                         {/*<h3 className="music-artist mt10">{this.props.cuerrentMusicItem.artist}</h3>*/}
 
-                        <h2 className="music-title">New Music Demo</h2>
-                        <h3 className="music-artist mt10">作者：my_user_name</h3>
+                        <h2 className="music-title">{title}</h2>
+                        <h3 className="music-artist mt10">音乐信息：{info}</h3>
 
                        {/* 音量控件 */}
                         <div className="row mt20">
@@ -502,7 +499,7 @@ class Player extends Component {
                                 {/*<i className="icon repeat-cycle"></i>*/}
                             {/*</div>*/}
                             <div style={{ margin_bottom:35 }}>
-                                <h3><Link to="/list">我的历史编曲</Link></h3>
+                                <h3><Link to={{ pathname:"/playListInfo", query: { musicInf: musicList } }} >我的历史编曲</Link></h3>
                             </div>
                         </div>
 

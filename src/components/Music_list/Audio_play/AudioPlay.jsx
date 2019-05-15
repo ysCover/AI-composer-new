@@ -667,8 +667,9 @@ class Audio_Play extends Component {
                     />
                   </span>
                 </div>
+
+                {/*列表body*/}
                 <div className="music-list-body">
-                  body
                   <div className="music-list-body-content">
                     <ul className="music-list-body-ul">
                       {musicList &&
@@ -691,6 +692,7 @@ class Audio_Play extends Component {
                                   {item.title}
                                 </span>
                               </div>
+                              {/*隐藏的几个button*/}
                               <div className="col music-list-li-col-3">
                                 <span
                                   className="icon-addfile music-list-action-icon"
@@ -717,6 +719,7 @@ class Audio_Play extends Component {
                               <div className="col music-list-li-col-5">
                                 <span className="music-list-li-text">
                                   {item.time}
+                                  {/*{totalTime}*/}
                                 </span>
                               </div>
                               <div className="col music-list-li-col-6">
@@ -729,10 +732,13 @@ class Audio_Play extends Component {
                   </div>
                   <div className="music-list-body-lyric">
                     {/*这里是歌词区域，后期完善*/}
-                      <h3 style={{color: "#c7c7c7"}}>音乐素材基本信息</h3>
-                      <p><h4 style={{color: "#c7c7c7"}}>曲风：爵士（Jazz）;    时长：60s ;       乐器： 钢琴</h4></p>
-                    <div className="-col-auto cover">
-                        <img src={imgPlayer} alt="PlayerLogo"  className={`${this.state.isPlay ? 'rotation' : ''}`}/>
+                      <h3 style={{color: "#c7c7c7"}}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;音乐素材基本信息</h3>
+                      <p><h4 style={{color: "#c7c7c7"}}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;曲风：爵士（Jazz）</h4></p>
+                      <p><h4 style={{color: "#c7c7c7"}}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;时长：20s-40s</h4></p>
+                      <p><h4 style={{color: "#c7c7c7"}}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;乐器： 钢琴</h4></p>
+                    <div className=" cover">
+                        <img src={imgPlayer} alt="PlayerLogo"  className="-col-auto"/>
                     </div>
                   </div>
                 </div>

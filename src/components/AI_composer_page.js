@@ -1,7 +1,6 @@
 /* eslint-disable */
 import React, { Component } from 'react';
-import { Form, Select, Button } from 'semantic-ui-react';
-import MovieList from './movie-list';
+import { Select, Button } from 'semantic-ui-react';
 import MusicPlayer from './AI-composer_items/ComposerPlayer';
 import imgLogo from '../static_files/images/ComposerLogo.JPG'
 
@@ -11,9 +10,9 @@ const StyleOptions = [
     { value: 'Rock', text: '摇滚乐（Rock）' },
 ];
 const TimeOptions = [
-    { value: '20s', text: '20s' },
-    { value: '40s', text: '40s' },
-    { value: '60s', text: '60s' },
+    { value: '20s', text: '10s - 20s' },
+    { value: '40s', text: '20s - 40s' },
+    { value: '60s', text: '40s - 60s' },
 ];
 const InstrumentOptions = [
     { value: 'Piano', text: '钢琴（Piano）' },
@@ -100,7 +99,6 @@ class AI_composer_page extends Component {
                         <MusicPlayer {...this.props}/>
                     </div>
                 </div>
-                {keyword && (<MovieList {...this.props} />)}
             </div>
         );
     };

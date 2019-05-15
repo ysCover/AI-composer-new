@@ -30,15 +30,15 @@
 }
 .icon-link:before {
   content: "\e910";
-  color: #fff;
+  color: #000;
 }
 .icon-addfile:before {
   content: "\e900";
-  color: #fff;
+  color: #000;
 }
 .icon-clear:before {
   content: "\e901";
-  color: #fff;
+  color: #000;
 }
 .icon-close:before {
   content: "\e902";
@@ -46,7 +46,7 @@
 }
 .icon-download:before {
   content: "\e903";
-  color: #fff;
+  color: #000;
 }
 .icon-question:before {
   content: "\e904";
@@ -90,7 +90,7 @@
 }
 .icon-share:before {
   content: "\e90e";
-  color: #fff;
+  color: #000;
 }
 .icon-volume:before {
   content: "\e90f";
