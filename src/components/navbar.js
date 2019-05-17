@@ -11,11 +11,6 @@ class Navbar extends Component {
                     编曲素材库推荐
                 </Menu.Item>
 
-                {/*<Menu.Item as={NavLink} to='/top250' name='top250' color='blue' link>*/}
-                    {/*<Icon name='list' />*/}
-                    {/*编曲推荐*/}
-                {/*</Menu.Item>*/}
-
                 <Menu.Item as={NavLink} to='/search' name='search' color='blue' link>
                     <Icon name='music' />
                     智能编曲

@@ -1,25 +1,53 @@
+/* eslint-disable */
 import React, {Component} from 'react';
 
 class LoginForm extends Component {
     // 绑定数据
     constructor(props) {
-        super(props)
+        super(props);
         this.state = {
             username: '',
             password: '',
-        }
+        };
+        this.onSubmit = this.onSubmit.bind(this);
     }
 
     // uername 改变事件
     onChange = (e) => {
         this.setState({[e.target.name]: e.target.value});
-    }
+    };
 
     //提交事件
-    onSubmit = (e) => {
+    // onSubmit = (e) => {
+    //     e.preventDefault();
+    //     console.log(this.state)
+    // };
+
+    //提交事件, 实现前后端交互接口(登陆)
+    onSubmit (e) {
+        // alert('姓名: ' + this.state.username + '\n' + '密码: ' + this.state.password );
         e.preventDefault();
-        console.log(this.state)
-    }
+        console.log(this.state);
+
+        let url = 'http://127.0.0.1:5000/login';
+        fetch(url,{
+            method: "POST",
+            body: JSON.stringify(this.state),
+            headers: {
+                 'content-type': 'application/json'
+            }
+        }).then((response) => {
+            return response.json();
+        })
+        .then((response) => {
+            alert(JSON.stringify(response));
+            console.log('Success:', JSON.stringify(response))   // 拿到数据进行页面渲染
+        })
+        .catch((error) => {
+            alert(error);
+            console.error('Error:', error);    //出错信息
+        });
+    };
 
     render() {
         return (
@@ -50,7 +78,7 @@ class LoginForm extends Component {
                 </div>
 
                 <div className="form-group">
-                    <button className="btn btn-primary btn-lg ">
+                    <button className="btn btn-primary btn-lg " onClick={this.onSubmit}>
                         登陆
                     </button>
                 </div>
